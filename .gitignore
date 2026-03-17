@@ -1,0 +1,11 @@
+# Production secrets
+.env.production
+backend/.env
+backend/.env.production
+
+# Upload files
+backend/uploads/
+
+# Python cache
+__pycache__/
+*.pyc
