@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Card, Form, Input, Button, Select, DatePicker, InputNumber, message, Spin } from 'antd'
+import { Card, Form, Button, Select, DatePicker, InputNumber, message, Spin } from 'antd'
 import { SaveOutlined } from '@ant-design/icons'
 import dayjs from 'dayjs'
 import { userApi } from '../services/api'
@@ -11,7 +11,7 @@ const ProfilePage = () => {
   const [form] = Form.useForm()
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
-  const { user, updateUser } = useAuthStore()
+  const { user } = useAuthStore()
 
   useEffect(() => {
     fetchProfile()

@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import { Layout } from 'antd'
 import { useAuthStore } from './stores/authStore'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
@@ -8,8 +7,6 @@ import SportRecordsPage from './pages/SportRecordsPage'
 import InjuryRecordsPage from './pages/InjuryRecordsPage'
 import ProfilePage from './pages/ProfilePage'
 import MainLayout from './components/MainLayout'
-
-const { Content } = Layout
 
 // Protected Route component
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
